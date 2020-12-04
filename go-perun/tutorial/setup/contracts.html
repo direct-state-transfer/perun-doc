@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Contracts &mdash; Perun Framework master documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Networking" href="networking.html" />
+    <link rel="prev" title="Chain Connection" href="chain.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Perun Framework
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                master
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+
+<!-- TODO : Include project logo, github repo link, community chat link -->
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../concepts/state-channel.html">Concepts</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Go-Perun</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#architecture">Architecture</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html#developer-tutorial">Developer Tutorial</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Tutorial</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../channels/index.html">Channels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../together.html">Putting it together</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#security-disclaimer">Security Disclaimer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#feedback-contact">Feedback &amp; Contact</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#funding-additional-information">Funding &amp; Additional Information</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../node/index.html">Perun node</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Perun Framework</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Go-Perun</a> &raquo;</li>
+        
+          <li><a href="../index.html">Tutorial</a> &raquo;</li>
+        
+          <li><a href="index.html">Setup</a> &raquo;</li>
+        
+      <li>Contracts</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/hyperledger-labs/perun-doc/blob/master/source/go-perun/tutorial/setup/contracts.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="contracts">
+<h1>Contracts<a class="headerlink" href="#contracts" title="Permalink to this headline">¶</a></h1>
+<p><em>go-perun</em> uses two contracts: the <em>Adjudicator</em> and the <em>Assetholder</em>.
+They are written in the contract language of Ethereum; <em>solidity</em>.
+Each contract must be deployed before <em>go-perun</em> can be used.
+Normally you would assume that they are already deployed and the addresses are known
+in advance. But since this is a complete
+example for a local chain, we must deploy them.</p>
+<div class="section" id="adjudicator">
+<h2>Adjudicator<a class="headerlink" href="#adjudicator" title="Permalink to this headline">¶</a></h2>
+<p>The <cite>Adjudicator</cite> contract ensures that a user can always enforce the rules of his channel.
+Since the main part of the communication is off-chain, he would only contact the <cite>Adjudicator</cite> if he feels betrayed by one of the participants.</p>
+</div>
+<div class="section" id="assetholder">
+<h2>AssetHolder<a class="headerlink" href="#assetholder" title="Permalink to this headline">¶</a></h2>
+<p>The <cite>AssetHolder</cite> holds the on-chain balances for all ledger channels. It is always associated with a specific <cite>Adjudicator</cite> instance.</p>
+<p>All participants deposit their funds into the <cite>AssetHolder</cite> before a channel can be opened.
+When the channel is closed all participants can withdraw their funds via the <cite>AssetHolder</cite>.
+In the case of a dispute, the <cite>AssetHolder</cite> respects the decision of its <cite>Adjudicator</cite> on how to proceed.</p>
+<p><em>go-perun</em> uses one contract per asset on top of the <em>Ethereum</em> blockchain.
+In this example we only use the <em>ETHAssetHolder</em> which is used for <em>ether</em>, the native
+currency in <em>Ethereum</em>.
+<em>ERC20 Tokens</em> are supported via the <em>ERC20AssetHolder</em>.</p>
+</div>
+<div class="section" id="deployment">
+<h2>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">¶</a></h2>
+<p>Deploying a contract means <em>installing</em> it on the blockchain. A deployed contract has a fixed public address.
+We will deploy both contracts as demonstration. In a running <em>go-perun</em> ecosystem the contracts’ <em>addresses</em> would be known in advance and you would just verify them.</p>
+<p>First we have to deploy the <em>Adjudicator</em> and then use the <em>Adjudicator’s</em> address to deploy the <em>AssetHolder</em>:</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kd">func</span> <span class="nx">deployContracts</span><span class="p">(</span><span class="nx">cb</span> <span class="nx">ethchannel</span><span class="p">.</span><span class="nx">ContractBackend</span><span class="p">,</span> <span class="nx">acc</span> <span class="nx">accounts</span><span class="p">.</span><span class="nx">Account</span><span class="p">)</span> <span class="p">(</span><span class="nx">adj</span><span class="p">,</span> <span class="nx">ah</span> <span class="nx">common</span><span class="p">.</span><span class="nx">Address</span><span class="p">,</span> <span class="nx">err</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// The context timeout must be atleast twice the blocktime.</span>
+	<span class="nx">ctx</span><span class="p">,</span> <span class="nx">cancel</span> <span class="o">:=</span> <span class="nx">context</span><span class="p">.</span><span class="nx">WithTimeout</span><span class="p">(</span><span class="nx">context</span><span class="p">.</span><span class="nx">Background</span><span class="p">(),</span> <span class="mi">31</span><span class="o">*</span><span class="nx">time</span><span class="p">.</span><span class="nx">Second</span><span class="p">)</span>
+	<span class="k">defer</span> <span class="nx">cancel</span><span class="p">()</span>
+
+	<span class="nx">adj</span><span class="p">,</span> <span class="nx">err</span> <span class="p">=</span> <span class="nx">ethchannel</span><span class="p">.</span><span class="nx">DeployAdjudicator</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="nx">cb</span><span class="p">,</span> <span class="nx">acc</span><span class="p">)</span>
+	<span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+		<span class="k">return</span>
+	<span class="p">}</span>
+
+	<span class="nx">ah</span><span class="p">,</span> <span class="nx">err</span> <span class="p">=</span> <span class="nx">ethchannel</span><span class="p">.</span><span class="nx">DeployETHAssetholder</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="nx">cb</span><span class="p">,</span> <span class="nx">adj</span><span class="p">,</span> <span class="nx">acc</span><span class="p">)</span>
+	<span class="k">return</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The context is needed to specify how long <em>go-perun</em> will wait for both deployments to succeed.
+If you have set a higher block time in <em>ganache</em>, you need to increase the timeout here too.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>ganache-cli</em> shows deployments as a <code class="code docutils literal notranslate"><span class="pre">Contract</span> <span class="pre">created</span></code> transaction.</p>
+</div>
+</div>
+<div class="section" id="validation">
+<h2>Validation<a class="headerlink" href="#validation" title="Permalink to this headline">¶</a></h2>
+<p><em>go-perun</em> can verify the addresses of deployed contracts.
+There are verification methods for the <em>Adjudicator</em> and <em>AssetHolderETH</em>.
+In our example, it is enough to use <a class="reference external" href="https://pkg.go.dev/perun.network/go-perun/backend/ethereum/channel#ValidateAssetHolderETH">ValidateAssetHolderETH</a> since the <em>AssetHolder</em> validation function also implicitly validates the linked <em>Adjudicator</em>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You should always verify a contract before using it to ensure that you don’t lose funds.</p>
+</div>
+<p>We wrap it in a function that accepts a <em>ContractBackend</em> and the addresses of the <em>Adjudicator</em> and <em>Assetholder</em>.</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kd">func</span> <span class="nx">validateContracts</span><span class="p">(</span><span class="nx">cb</span> <span class="nx">ethchannel</span><span class="p">.</span><span class="nx">ContractBackend</span><span class="p">,</span> <span class="nx">adj</span><span class="p">,</span> <span class="nx">ah</span> <span class="nx">common</span><span class="p">.</span><span class="nx">Address</span><span class="p">)</span> <span class="kt">error</span> <span class="p">{</span>
+	<span class="nx">ctx</span><span class="p">,</span> <span class="nx">cancel</span> <span class="o">:=</span> <span class="nx">context</span><span class="p">.</span><span class="nx">WithTimeout</span><span class="p">(</span><span class="nx">context</span><span class="p">.</span><span class="nx">Background</span><span class="p">(),</span> <span class="mi">20</span><span class="o">*</span><span class="nx">time</span><span class="p">.</span><span class="nx">Second</span><span class="p">)</span>
+	<span class="k">defer</span> <span class="nx">cancel</span><span class="p">()</span>
+	<span class="c1">// Assetholder validation includes Adjudicator validation.</span>
+	<span class="k">return</span> <span class="nx">ethchannel</span><span class="p">.</span><span class="nx">ValidateAssetHolderETH</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="nx">cb</span><span class="p">,</span> <span class="nx">ah</span><span class="p">,</span> <span class="nx">adj</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="putting-it-together">
+<h2>Putting it together<a class="headerlink" href="#putting-it-together" title="Permalink to this headline">¶</a></h2>
+<p>Since we have two roles, we need to combine the two functions and switch on the role that
+is running:</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kd">func</span> <span class="nx">setupContracts</span><span class="p">(</span><span class="nx">role</span> <span class="nx">Role</span><span class="p">,</span> <span class="nx">contractBackend</span> <span class="nx">ethchannel</span><span class="p">.</span><span class="nx">ContractBackend</span><span class="p">,</span> <span class="nx">account</span> <span class="nx">accounts</span><span class="p">.</span><span class="nx">Account</span><span class="p">)</span> <span class="p">(</span><span class="nx">adjudicator</span> <span class="o">*</span><span class="nx">ethchannel</span><span class="p">.</span><span class="nx">Adjudicator</span><span class="p">,</span> <span class="nx">assetholder</span> <span class="nx">common</span><span class="p">.</span><span class="nx">Address</span><span class="p">,</span> <span class="nx">err</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+	<span class="kd">var</span> <span class="nx">adjudicatorAddr</span> <span class="nx">common</span><span class="p">.</span><span class="nx">Address</span>
+	<span class="c1">// Alice will deploy the contracts and Bob validate them.</span>
+	<span class="k">if</span> <span class="nx">role</span> <span class="o">==</span> <span class="nx">RoleAlice</span> <span class="p">{</span>
+		<span class="nx">adjudicatorAddr</span><span class="p">,</span> <span class="nx">assetholder</span><span class="p">,</span> <span class="nx">err</span> <span class="p">=</span> <span class="nx">deployContracts</span><span class="p">(</span><span class="nx">contractBackend</span><span class="p">,</span> <span class="nx">account</span><span class="p">)</span>
+		<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Deployed contracts&quot;</span><span class="p">)</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+		<span class="c1">// Assume default addresses for Adjudicator and Assetholder.</span>
+		<span class="nx">adjudicatorAddr</span> <span class="p">=</span> <span class="nx">common</span><span class="p">.</span><span class="nx">HexToAddress</span><span class="p">(</span><span class="s">&quot;0x079557d7549d7D44F4b00b51d2C532674129ed51&quot;</span><span class="p">)</span>
+		<span class="nx">assetholder</span> <span class="p">=</span> <span class="nx">common</span><span class="p">.</span><span class="nx">HexToAddress</span><span class="p">(</span><span class="s">&quot;0x923439be515b6A928cB9650d70000a9044e49E85&quot;</span><span class="p">)</span>
+		<span class="nx">err</span> <span class="p">=</span> <span class="nx">validateContracts</span><span class="p">(</span><span class="nx">contractBackend</span><span class="p">,</span> <span class="nx">adjudicatorAddr</span><span class="p">,</span> <span class="nx">assetholder</span><span class="p">)</span>
+		<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Validated contracts&quot;</span><span class="p">)</span>
+	<span class="p">}</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot; Adjudicator at %v\n AssetHolder at %v\n&quot;</span><span class="p">,</span> <span class="nx">adjudicatorAddr</span><span class="p">,</span> <span class="nx">assetholder</span><span class="p">)</span>
+	<span class="nx">adjudicator</span> <span class="p">=</span> <span class="nx">ethchannel</span><span class="p">.</span><span class="nx">NewAdjudicator</span><span class="p">(</span><span class="nx">contractBackend</span><span class="p">,</span> <span class="nx">adjudicatorAddr</span><span class="p">,</span> <span class="nx">account</span><span class="p">.</span><span class="nx">Address</span><span class="p">,</span> <span class="nx">account</span><span class="p">)</span>
+	<span class="k">return</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The addresses for <cite>Adjudicator</cite> and <cite>AssetHolder</cite> can be hard-coded again since we know
+what they will be when we deploy the contracts for the first time. This implies that
+we always restart the <em>ganache-cli</em> before running it.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+        <a href="networking.html" class="btn btn-neutral float-right" title="Networking" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        
+        
+        <a href="chain.html" class="btn btn-neutral" title="Chain Connection" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        
+    </div>
+    
+
+    <hr/>
+
+    <div role="contentinfo">
+        <p>
+        Copyright &copy; 2020-2021, Perun Framework Contributors.
+        <br>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>&nbsp;&nbsp;<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="(CC-BY-4.0)" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+        
+        <span class="build">
+            Build
+            <a href="https://circleci.com/gh/hyperledger-labs/perun-doc/140">140</a>.
+        </span>
+        
+
+        </p>
+    </div>
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

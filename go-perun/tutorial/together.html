@@ -1,0 +1,433 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Putting it together &mdash; Perun Framework master documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Perun node" href="../../node/index.html" />
+    <link rel="prev" title="Disputes" href="channels/disputes.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+
+          
+            <a href="../../index.html" class="icon icon-home"> Perun Framework
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                master
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+
+<!-- TODO : Include project logo, github repo link, community chat link -->
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../concepts/state-channel.html">Concepts</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Go-Perun</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#architecture">Architecture</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#developer-tutorial">Developer Tutorial</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Tutorial</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l4"><a class="reference internal" href="setup/index.html">Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="channels/index.html">Channels</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Putting it together</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#security-disclaimer">Security Disclaimer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#feedback-contact">Feedback &amp; Contact</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#funding-additional-information">Funding &amp; Additional Information</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../node/index.html">Perun node</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Perun Framework</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Go-Perun</a> &raquo;</li>
+        
+          <li><a href="index.html">Tutorial</a> &raquo;</li>
+        
+      <li>Putting it together</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/hyperledger-labs/perun-doc/blob/master/source/go-perun/tutorial/together.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="putting-it-together">
+<h1>Putting it together<a class="headerlink" href="#putting-it-together" title="Permalink to this headline">¶</a></h1>
+<p>Now we combine all the components that we previously setup in a <em>setup</em> function.
+It will be called once for <em>Alice</em> and once for <em>Bob</em> from <em>main</em> like this:</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="c1">// Setup Alice and Bob.</span>
+	<span class="nx">alice</span><span class="p">,</span> <span class="nx">bob</span> <span class="o">:=</span> <span class="nx">setup</span><span class="p">(</span><span class="nx">RoleAlice</span><span class="p">),</span> <span class="nx">setup</span><span class="p">(</span><span class="nx">RoleBob</span><span class="p">)</span>
+	<span class="c1">// Run our example protocol: Bob Opens, Updates and Closes.</span>
+	<span class="k">if</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">bob</span><span class="p">.</span><span class="nx">openChannel</span><span class="p">();</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+		<span class="nb">panic</span><span class="p">(</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Errorf</span><span class="p">(</span><span class="s">&quot;opening channel: %w&quot;</span><span class="p">,</span> <span class="nx">err</span><span class="p">))</span>
+	<span class="p">}</span>
+	<span class="k">if</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">bob</span><span class="p">.</span><span class="nx">updateChannel</span><span class="p">();</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+		<span class="nb">panic</span><span class="p">(</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Errorf</span><span class="p">(</span><span class="s">&quot;updating channel: %w&quot;</span><span class="p">,</span> <span class="nx">err</span><span class="p">))</span>
+	<span class="p">}</span>
+	<span class="k">if</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">bob</span><span class="p">.</span><span class="nx">closeChannel</span><span class="p">();</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+		<span class="nb">panic</span><span class="p">(</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Errorf</span><span class="p">(</span><span class="s">&quot;closing channel: %w&quot;</span><span class="p">,</span> <span class="nx">err</span><span class="p">))</span>
+	<span class="p">}</span>
+	<span class="c1">// Wait for both nodes to stop.</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Waiting for Alice&quot;</span><span class="p">)</span>
+	<span class="o">&lt;-</span><span class="nx">alice</span><span class="p">.</span><span class="nx">done</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Waiting for Bob&quot;</span><span class="p">)</span>
+	<span class="o">&lt;-</span><span class="nx">bob</span><span class="p">.</span><span class="nx">done</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kd">func</span> <span class="nx">setup</span><span class="p">(</span><span class="nx">role</span> <span class="nx">Role</span><span class="p">)</span> <span class="o">*</span><span class="nx">node</span> <span class="p">{</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Starting &quot;</span><span class="p">,</span> <span class="nx">role</span><span class="p">)</span>
+	<span class="nx">account</span><span class="p">,</span> <span class="nx">wallet</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">setupWallet</span><span class="p">(</span><span class="nx">role</span><span class="p">)</span>
+	<span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+		<span class="nb">panic</span><span class="p">(</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Sprintf</span><span class="p">(</span><span class="s">&quot;setting up wallet: %v&quot;</span><span class="p">,</span> <span class="nx">err</span><span class="p">))</span>
+	<span class="p">}</span>
+	<span class="nx">transactor</span> <span class="o">:=</span> <span class="nx">createTransactor</span><span class="p">(</span><span class="nx">wallet</span><span class="p">)</span>
+
+	<span class="nx">_</span><span class="p">,</span> <span class="nx">contractBackend</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">connectToChain</span><span class="p">(</span><span class="nx">transactor</span><span class="p">)</span>
+	<span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+		<span class="nb">panic</span><span class="p">(</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Sprintf</span><span class="p">(</span><span class="s">&quot;connecting to chain: %v&quot;</span><span class="p">,</span> <span class="nx">err</span><span class="p">))</span>
+	<span class="p">}</span>
+
+	<span class="nx">adjudicator</span><span class="p">,</span> <span class="nx">assetholder</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">setupContracts</span><span class="p">(</span><span class="nx">role</span><span class="p">,</span> <span class="nx">contractBackend</span><span class="p">,</span> <span class="nx">account</span><span class="p">.</span><span class="nx">Account</span><span class="p">)</span>
+	<span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+		<span class="nb">panic</span><span class="p">(</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Errorf</span><span class="p">(</span><span class="s">&quot;setting up contracts: %w&quot;</span><span class="p">,</span> <span class="nx">err</span><span class="p">))</span>
+	<span class="p">}</span>
+
+	<span class="nx">listener</span><span class="p">,</span> <span class="nx">bus</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">setupNetwork</span><span class="p">(</span><span class="nx">role</span><span class="p">,</span> <span class="nx">account</span><span class="p">)</span>
+	<span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+		<span class="nb">panic</span><span class="p">(</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Errorf</span><span class="p">(</span><span class="s">&quot;setting up network: %w&quot;</span><span class="p">,</span> <span class="nx">err</span><span class="p">))</span>
+	<span class="p">}</span>
+
+	<span class="nx">funder</span> <span class="o">:=</span> <span class="nx">setupFunder</span><span class="p">(</span><span class="nx">contractBackend</span><span class="p">,</span> <span class="nx">account</span><span class="p">.</span><span class="nx">Account</span><span class="p">,</span> <span class="nx">assetholder</span><span class="p">)</span>
+	<span class="nx">cl</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">client</span><span class="p">.</span><span class="nx">New</span><span class="p">(</span><span class="nx">cfg</span><span class="p">.</span><span class="nx">addrs</span><span class="p">[</span><span class="nx">role</span><span class="p">],</span> <span class="nx">bus</span><span class="p">,</span> <span class="nx">funder</span><span class="p">,</span> <span class="nx">adjudicator</span><span class="p">,</span> <span class="nx">wallet</span><span class="p">)</span>
+	<span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+		<span class="nb">panic</span><span class="p">(</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Errorf</span><span class="p">(</span><span class="s">&quot;creating client: %w&quot;</span><span class="p">,</span> <span class="nx">err</span><span class="p">))</span>
+	<span class="p">}</span>
+	<span class="c1">// Create the node that defines all event handlers for go-perun.</span>
+	<span class="nx">node</span> <span class="o">:=</span> <span class="o">&amp;</span><span class="nx">node</span><span class="p">{</span><span class="nx">role</span><span class="p">:</span> <span class="nx">role</span><span class="p">,</span> <span class="nx">account</span><span class="p">:</span> <span class="nx">account</span><span class="p">,</span> <span class="nx">transactor</span><span class="p">:</span> <span class="nx">transactor</span><span class="p">,</span>
+		<span class="nx">contractBackend</span><span class="p">:</span> <span class="nx">contractBackend</span><span class="p">,</span> <span class="nx">assetholder</span><span class="p">:</span> <span class="nx">assetholder</span><span class="p">,</span> <span class="nx">listener</span><span class="p">:</span> <span class="nx">listener</span><span class="p">,</span>
+		<span class="nx">bus</span><span class="p">:</span> <span class="nx">bus</span><span class="p">,</span> <span class="nx">client</span><span class="p">:</span> <span class="nx">cl</span><span class="p">,</span> <span class="nx">ch</span><span class="p">:</span> <span class="kc">nil</span><span class="p">,</span> <span class="nx">done</span><span class="p">:</span> <span class="nb">make</span><span class="p">(</span><span class="kd">chan</span> <span class="kd">struct</span><span class="p">{})}</span>
+	<span class="c1">// Set the NewChannel handler.</span>
+	<span class="nx">cl</span><span class="p">.</span><span class="nx">OnNewChannel</span><span class="p">(</span><span class="nx">node</span><span class="p">.</span><span class="nx">HandleNewChannel</span><span class="p">)</span>
+	<span class="c1">// Start Proposal- and UpdateHandlers.</span>
+	<span class="k">go</span> <span class="nx">cl</span><span class="p">.</span><span class="nx">Handle</span><span class="p">(</span><span class="nx">node</span><span class="p">,</span> <span class="nx">node</span><span class="p">)</span>
+	<span class="c1">// Listen on incoming connections.</span>
+	<span class="k">go</span> <span class="nx">bus</span><span class="p">.</span><span class="nx">Listen</span><span class="p">(</span><span class="nx">listener</span><span class="p">)</span>
+	<span class="k">return</span> <span class="nx">node</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="section" id="running-the-app">
+<span id="run-the-app"></span><h2>Running the App<a class="headerlink" href="#running-the-app" title="Permalink to this headline">¶</a></h2>
+<p>Now we can finally test if everything works together.</p>
+<p>First start your local Ethereum blockchain specifying the block time, the number of accounts, and the mnemonic:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ganache</span><span class="o">-</span><span class="n">cli</span> <span class="o">-</span><span class="n">b</span> <span class="mi">5</span> <span class="o">-</span><span class="n">a</span> <span class="mi">2</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;pistol kiwi shrug future ozone ostrich match remove crucial oblige cream critic&quot;</span>
+</pre></div>
+</div>
+<p>The chain is running when you see an output like this:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Ganache CLI v6.12.1 (ganache-core: 2.13.1)</span>
+
+<span class="go">Available Accounts</span>
+<span class="go">==================</span>
+<span class="gp gp-VirtualEnv">(0)</span> <span class="go">0x2EE1ac154435f542ECEc55C5b0367650d8A5343B (100 ETH)</span>
+<span class="gp gp-VirtualEnv">(1)</span> <span class="go">0x70765701b79a4e973dAbb4b30A72f5a845f22F9E (100 ETH)</span>
+
+<span class="go">Private Keys</span>
+<span class="go">==================</span>
+<span class="gp gp-VirtualEnv">(0)</span> <span class="go">0xb691bc22c5a30f64876c6136553023d522dcdf0744306dccf4f034a465532e27</span>
+<span class="gp gp-VirtualEnv">(1)</span> <span class="go">0xb5dc82fc5f4d82b59a38ac963a15eaaedf414f496a037bb4a52310915ac84097</span>
+
+<span class="go">HD Wallet</span>
+<span class="go">==================</span>
+<span class="go">Mnemonic:      pistol kiwi shrug future ozone ostrich match remove crucial oblige cream critic</span>
+<span class="go">Base HD Path:  m/44&#39;/60&#39;/0&#39;/0/{account_index}</span>
+
+<span class="go">Gas Price</span>
+<span class="go">==================</span>
+<span class="go">20000000000</span>
+
+<span class="go">Gas Limit</span>
+<span class="go">==================</span>
+<span class="go">6721975</span>
+
+<span class="go">Call Gas Limit</span>
+<span class="go">==================</span>
+<span class="go">9007199254740991</span>
+
+<span class="go">Listening on 127.0.0.1:8545</span>
+</pre></div>
+</div>
+<p>You can see <em>Alice’</em> and <em>Bobs</em> addresses starting with <cite>0x2EE…</cite> and <cite>0x707…</cite> having both 100 <em>ETH</em>.</p>
+<p>Now run the tutorial application via the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">go</span> <span class="n">run</span> <span class="o">.</span>
+</pre></div>
+</div>
+<p>If everything works, you should see the following output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Starting  Alice
+Deployed contracts
+ Adjudicator at 0x079557d7549d7D44F4b00b51d2C532674129ed51
+ AssetHolder at 0x923439be515b6A928cB9650d70000a9044e49E85
+Setting up listener for 0.0.0.0:8401
+Starting  Bob
+Validated contracts
+ Adjudicator at 0x079557d7549d7D44F4b00b51d2C532674129ed51
+ AssetHolder at 0x923439be515b6A928cB9650d70000a9044e49E85
+Setting up listener for 0.0.0.0:8402
+Opening channel from Bob to Alice
+Received channel proposal from 0x307837303736353730316237396134653937336441626234623330413732663561383435663232463945
+Alice HandleNewChannel with id 0x644eba7aca469e34229de7b7f0ce12f31ef4bc30f17a35a7d95412e2d64296d0
+Accepted channel with id 0x644eba7aca469e34229de7b7f0ce12f31ef4bc30f17a35a7d95412e2d64296d0
+Bob HandleNewChannel with id 0x644eba7aca469e34229de7b7f0ce12f31ef4bc30f17a35a7d95412e2d64296d0
+🎉 Opened channel with id 0x644eba7aca469e34229de7b7f0ce12f31ef4bc30f17a35a7d95412e2d64296d0
+Alice HandleUpdate Bals=[15000000000000000000, 5000000000000000000]
+HandleAdjudicatorEvent called id=0x644eba7aca469e34229de7b7f0ce12f31ef4bc30f17a35a7d95412e2d64296d0
+HandleAdjudicatorEvent called id=0x644eba7aca469e34229de7b7f0ce12f31ef4bc30f17a35a7d95412e2d64296d0
+Waiting for Alice
+Waiting for Bob
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<div class="line-block">
+<div class="line">Running the code twice will produce different addresses since the state of the chain changed.</div>
+<div class="line">Always restart the chain if you need a deterministic testing environment.</div>
+</div>
+</div>
+<p>The <em>ganache-cli</em> window will output the two deploy transactions.
+The first for ~2M gas is the <em>Adjudicator</em></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Transaction: 0xe3b4e79293d042e264224fe64f1028e4a1c7da02ba8d63f9a125081479e83d2f</span>
+<span class="go">Contract created: 0x079557d7549d7d44f4b00b51d2c532674129ed51</span>
+<span class="go">Gas usage: 2090042</span>
+<span class="go">Block Number: 1</span>
+<span class="go">Block Time: Wed Jan 13 2021 16:40:28 GMT+0100 (Central European Standard Time)</span>
+</pre></div>
+</div>
+<p>and then the <em>AssetHolder</em> for ~870K gas</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Transaction: 0x1fb382d4640a1fa986a1d2c6451dfbcb5d86bd00ac05bc0a091294c002fb0c09</span>
+<span class="go">Contract created: 0x923439be515b6a928cb9650d70000a9044e49e85</span>
+<span class="go">Gas usage: 870103</span>
+<span class="go">Block Number: 2</span>
+<span class="go">Block Time: Wed Jan 13 2021 16:40:29 GMT+0100 (Central European Standard Time)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The transactions are really quick on the local chain. On a testnet or main-chain each transaction would take about 15 seconds.</p>
+</div>
+<p>The following two transactions are the funding calls on the <cite>AssetHolder</cite>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Transaction: 0xdfd0159e32032dc472012fdfcd2aa20847a0ab82059b7233140da13490bd47d7</span>
+<span class="go">Gas usage: 44560</span>
+<span class="go">Block Number: 3</span>
+<span class="go">Block Time: Wed Jan 13 2021 16:40:29 GMT+0100 (Central European Standard Time)</span>
+</pre></div>
+</div>
+<p>Next is the <cite>concludeFinal</cite> call on the <cite>Adjudicator</cite>. It uses more gas than a normal transaction since it executes the conclude logic.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Transaction: 0xdffaa6a29d1c452e071468778fbf674d3137f740eb4bd67380e47aac3ce5b0fb</span>
+<span class="go">Gas usage: 141827</span>
+<span class="go">Block Number: 5</span>
+<span class="go">Block Time: Wed Jan 13 2021 16:40:30 GMT+0100 (Central European Standard Time)</span>
+</pre></div>
+</div>
+<p>Finally both participants withdraw their funds:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Transaction: 0x193681cc0d19639a1f92b9884c7a25e542bf3e609368df83b52d043ecc344c0c</span>
+<span class="go">Gas usage: 32731</span>
+<span class="go">Block Number: 6</span>
+<span class="go">Block Time: Wed Jan 13 2021 16:40:30 GMT+0100 (Central European Standard Time)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+        <a href="../../node/index.html" class="btn btn-neutral float-right" title="Perun node" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        
+        
+        <a href="channels/disputes.html" class="btn btn-neutral" title="Disputes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        
+    </div>
+    
+
+    <hr/>
+
+    <div role="contentinfo">
+        <p>
+        Copyright &copy; 2020-2021, Perun Framework Contributors.
+        <br>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>&nbsp;&nbsp;<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="(CC-BY-4.0)" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+        
+        <span class="build">
+            Build
+            <a href="https://circleci.com/gh/hyperledger-labs/perun-doc/140">140</a>.
+        </span>
+        
+
+        </p>
+    </div>
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

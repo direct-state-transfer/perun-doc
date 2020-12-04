@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Wallet &mdash; Perun Framework master documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Chain Connection" href="chain.html" />
+    <link rel="prev" title="Configuration" href="config.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Perun Framework
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                master
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+
+<!-- TODO : Include project logo, github repo link, community chat link -->
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../concepts/state-channel.html">Concepts</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Go-Perun</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#architecture">Architecture</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html#developer-tutorial">Developer Tutorial</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Tutorial</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../channels/index.html">Channels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../together.html">Putting it together</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#security-disclaimer">Security Disclaimer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#feedback-contact">Feedback &amp; Contact</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#funding-additional-information">Funding &amp; Additional Information</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../node/index.html">Perun node</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Perun Framework</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Go-Perun</a> &raquo;</li>
+        
+          <li><a href="../index.html">Tutorial</a> &raquo;</li>
+        
+          <li><a href="index.html">Setup</a> &raquo;</li>
+        
+      <li>Wallet</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/hyperledger-labs/perun-doc/blob/master/source/go-perun/tutorial/setup/wallet.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="wallet">
+<h1>Wallet<a class="headerlink" href="#wallet" title="Permalink to this headline">¶</a></h1>
+<p>We will setup a wallet to hold the <em>accounts</em>.
+As simplification we use the same <em>mnemonic</em> for both <em>roles</em>.
+In a real program you would choose one <em>mnemonic</em> per <em>role</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A <em>mnemonic</em> is an alternative representation of an <em>Ethereum</em> secret key.</p>
+</div>
+<div class="section" id="hd-wallet">
+<h2>HD Wallet<a class="headerlink" href="#hd-wallet" title="Permalink to this headline">¶</a></h2>
+<p>Setting up the wallet consists of parsing the <em>mnemonic</em>, deriving a wallet from it and deriving accounts from that wallet.
+To structure our program, we introduce a <em>setupWallet</em> function that will do these three steps. Thanks to <a class="reference external" href="https://github.com/miguelmota/go-ethereum-hdwallet">miguelmota’s</a> <em>mnemonic</em> parser it looks like this:</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kd">func</span> <span class="nx">setupWallet</span><span class="p">(</span><span class="nx">role</span> <span class="nx">Role</span><span class="p">)</span> <span class="p">(</span><span class="o">*</span><span class="nx">perunhd</span><span class="p">.</span><span class="nx">Account</span><span class="p">,</span> <span class="o">*</span><span class="nx">perunhd</span><span class="p">.</span><span class="nx">Wallet</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">rootWallet</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">hdwallet</span><span class="p">.</span><span class="nx">NewFromMnemonic</span><span class="p">(</span><span class="nx">cfg</span><span class="p">.</span><span class="nx">mnemonic</span><span class="p">)</span>
+	<span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="kc">nil</span><span class="p">,</span> <span class="kc">nil</span><span class="p">,</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Errorf</span><span class="p">(</span><span class="s">&quot;creating hd wallet: %w&quot;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
+	<span class="p">}</span>
+	<span class="c1">// Alice has account index 0 and Bob 1.</span>
+	<span class="nx">wallet</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">perunhd</span><span class="p">.</span><span class="nx">NewWallet</span><span class="p">(</span><span class="nx">rootWallet</span><span class="p">,</span> <span class="s">&quot;m/44&#39;/60&#39;/0&#39;/0/0&quot;</span><span class="p">,</span> <span class="nb">uint</span><span class="p">(</span><span class="nx">role</span><span class="p">))</span>
+	<span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="kc">nil</span><span class="p">,</span> <span class="kc">nil</span><span class="p">,</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Errorf</span><span class="p">(</span><span class="s">&quot;deriving path: %w&quot;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
+	<span class="p">}</span>
+	<span class="c1">// Derive the first account from the wallet.</span>
+	<span class="nx">acc</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">wallet</span><span class="p">.</span><span class="nx">NewAccount</span><span class="p">()</span>
+	<span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="kc">nil</span><span class="p">,</span> <span class="kc">nil</span><span class="p">,</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Errorf</span><span class="p">(</span><span class="s">&quot;deriving hd account: %w&quot;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
+	<span class="p">}</span>
+
+	<span class="k">return</span> <span class="nx">acc</span><span class="p">,</span> <span class="nx">wallet</span><span class="p">,</span> <span class="kc">nil</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>We pass the <em>role</em> to the function since we need to create one account for each <em>role</em>.
+The third argument to <a class="reference external" href="https://pkg.go.dev/perun.network/go-perun/backend/ethereum/wallet/hd#NewWallet">NewWallet</a> defines the index of the first account that will be later on created with <a class="reference external" href="https://pkg.go.dev/perun.network/go-perun/backend/ethereum/wallet/hd#Wallet.NewAccount">NewAccount</a>. <em>Alice</em> will have the first account (index 0) and <em>Bob</em> the second (index 1).
+The <cite>“m/44’/60’/0’/0/0”</cite> argument defines the <em>derivation path</em>. We just use the default value here.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">The <em>derivation path</em> gives the <strong>HD</strong> wallet its name by specifying the location of an account in a <strong>H</strong>ierarchical and <strong>D</strong>eterministic way.</div>
+<div class="line"><em>Ethereum</em> HD wallets normally use <cite>m/44’/60’/0’/0/0</cite>.</div>
+</div>
+</div>
+<p>These <em>accounts</em> will be used throughout the code to sign on- and off-chain transactions.
+You could create multiple <em>accounts</em> to keep on- and off-chain <em>accounts</em> separate.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">These are the same <em>accounts</em> that you would get when entering the <em>mnemonic</em> into <em>MetaMask</em>.</div>
+</div>
+</div>
+</div>
+<div class="section" id="hd-transactor">
+<h2>HD Transactor<a class="headerlink" href="#hd-transactor" title="Permalink to this headline">¶</a></h2>
+<p>Signing transactions is quite a complex thing in <em>Ethereum</em>. <em>go-perun</em> abstracts most of it away but we still have to deal with the remnants.
+<em>Ethereum</em> has multiple (currently three) different transaction signature algorithms.
+<em>go-perun</em> exposes this functionality to the user but in our case, it is enough to use the <em>EIP155</em> signature algorithm and <em>1337</em> as <em>chain id</em>.
+We will need this <cite>Transactor</cite> in the next step:</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kd">func</span> <span class="nx">createTransactor</span><span class="p">(</span><span class="nx">wallet</span> <span class="o">*</span><span class="nx">perunhd</span><span class="p">.</span><span class="nx">Wallet</span><span class="p">)</span> <span class="o">*</span><span class="nx">perunhd</span><span class="p">.</span><span class="nx">Transactor</span> <span class="p">{</span>
+	<span class="c1">// 1337 is the default chain id for ganache-cli.</span>
+	<span class="nx">signer</span> <span class="o">:=</span> <span class="nx">types</span><span class="p">.</span><span class="nx">NewEIP155Signer</span><span class="p">(</span><span class="nx">big</span><span class="p">.</span><span class="nx">NewInt</span><span class="p">(</span><span class="mi">1337</span><span class="p">))</span>
+	<span class="k">return</span> <span class="nx">perunhd</span><span class="p">.</span><span class="nx">NewTransactor</span><span class="p">(</span><span class="nx">wallet</span><span class="p">.</span><span class="nx">Wallet</span><span class="p">(),</span> <span class="nx">signer</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="line-block">
+<div class="line">A signature is only valid on a blockchain with the same <em>chain id</em>.</div>
+<div class="line">One use case is to prevent <em>Ethereum Classic</em> transactions from being used on the <em>ETH</em> main chain.</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+        <a href="chain.html" class="btn btn-neutral float-right" title="Chain Connection" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        
+        
+        <a href="config.html" class="btn btn-neutral" title="Configuration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        
+    </div>
+    
+
+    <hr/>
+
+    <div role="contentinfo">
+        <p>
+        Copyright &copy; 2020-2021, Perun Framework Contributors.
+        <br>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>&nbsp;&nbsp;<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="(CC-BY-4.0)" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+        
+        <span class="build">
+            Build
+            <a href="https://circleci.com/gh/hyperledger-labs/perun-doc/140">140</a>.
+        </span>
+        
+
+        </p>
+    </div>
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

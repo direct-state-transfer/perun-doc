@@ -1,0 +1,292 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Getting Started &mdash; Perun Framework master documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Setup" href="setup/index.html" />
+    <link rel="prev" title="Tutorial" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+
+          
+            <a href="../../index.html" class="icon icon-home"> Perun Framework
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                master
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+
+<!-- TODO : Include project logo, github repo link, community chat link -->
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../concepts/state-channel.html">Concepts</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Go-Perun</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#architecture">Architecture</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#developer-tutorial">Developer Tutorial</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Tutorial</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Getting Started</a></li>
+<li class="toctree-l4"><a class="reference internal" href="setup/index.html">Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="channels/index.html">Channels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="together.html">Putting it together</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#security-disclaimer">Security Disclaimer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#feedback-contact">Feedback &amp; Contact</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#funding-additional-information">Funding &amp; Additional Information</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../node/index.html">Perun node</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Perun Framework</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Go-Perun</a> &raquo;</li>
+        
+          <li><a href="index.html">Tutorial</a> &raquo;</li>
+        
+      <li>Getting Started</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/hyperledger-labs/perun-doc/blob/master/source/go-perun/tutorial/getting-started.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="getting-started">
+<span id="id1"></span><h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>First we setup some dependencies: Golang and ganache-cli. But no worries, we will walk you through it 😌</p>
+<div class="section" id="tutorial-source-code">
+<h2>Tutorial Source Code<a class="headerlink" href="#tutorial-source-code" title="Permalink to this headline">¶</a></h2>
+<p>To make it easier to follow the tutorial, you may already clone the source code repository:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> <span class="nv">$GOPATH</span>/src
+git clone https://github.com/perun-network/perun-examples.git
+<span class="nb">cd</span> perun-examples/simple-client
+<span class="c1"># Initialize Golang</span>
+go mod tidy
+</pre></div>
+</div>
+<p>Running the code is the <a class="reference internal" href="together.html#run-the-app"><span class="std std-ref">last part</span></a>, but feel free to try it out first.</p>
+</div>
+<div class="section" id="golang">
+<h2>Golang<a class="headerlink" href="#golang" title="Permalink to this headline">¶</a></h2>
+<p>The tutorial source code will be written in <em>Golang</em>.
+The official <em>Golang</em> installation guide can be found <a class="reference external" href="https://golang.org/doc/install">here</a>.
+Restart your shell and check the installation by running:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">go</span> <span class="n">version</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ganache-cli">
+<h2>Ganache CLI<a class="headerlink" href="#ganache-cli" title="Permalink to this headline">¶</a></h2>
+<p>For the purpose of this tutorial we will use <a class="reference external" href="https://github.com/trufflesuite/ganache-cli">ganache-cli</a> for providing us with a local Ethereum blockchain for testing our application locally.
+Install ganache-cli by following <a class="reference external" href="https://github.com/trufflesuite/ganache-cli#installation">the instructions on the web page</a>.
+You can check if ganache-cli is installed by running:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ganache</span><span class="o">-</span><span class="n">cli</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>When we run our local blockchain, we usually configure accounts that we want to prefund.
+We will do this by specifying a mnemonic.
+A mnemonic is a sequence of randomly chosen words from which account secret keys can be derived.
+For the purpose of this tutorial we will use the following mnemonic:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;pistol kiwi shrug future ozone ostrich match remove crucial oblige cream critic&quot;</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Always keep your <em>mnemonic</em> private. Do not use the example <em>mnemonic</em>
+with real funds.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        
+        <a href="setup/index.html" class="btn btn-neutral float-right" title="Setup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        
+        
+        <a href="index.html" class="btn btn-neutral" title="Tutorial" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        
+    </div>
+    
+
+    <hr/>
+
+    <div role="contentinfo">
+        <p>
+        Copyright &copy; 2020-2021, Perun Framework Contributors.
+        <br>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>&nbsp;&nbsp;<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="(CC-BY-4.0)" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+        
+        <span class="build">
+            Build
+            <a href="https://circleci.com/gh/hyperledger-labs/perun-doc/140">140</a>.
+        </span>
+        
+
+        </p>
+    </div>
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
